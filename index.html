@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Anniversary Sneha</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap');body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  overflow-x: hidden;
+}
+
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  transform: rotate(45deg);
+  animation: float 6s infinite ease-in;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: -10px;
+  top: 0;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.container {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.message {
+  color: #fff;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+  max-width: 800px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.photo {
+  max-width: 300px;
+  border-radius: 20px;
+  margin: 30px auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  border: 5px solid white;
+}
+
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+  <div class="container">
+    <h1>Happy 3 Years, Sneha!</h1>
+    <img src="sneha.jpg" alt="Sneha" class="photo">
+    <img src="couple.jpg" alt="Couple" class="photo">
+    <div class="message">
+      Hmari ayesha ki pyari si sundar si sweet si bholi si mmi g aaj hmare relation ship ko 3 years complete hogye hai yaad hai na us din aapko kaha tha apke kaan me dheere se i luvvv youuu yaaad to hoga hi...Ye teen saal bhut ache se gujre hai aapke saath haskar ladkr rokr gussa hoke pyar krke gandi batein krke mana kr saari baatein share krke...
+
+  Aj bhi apse utna hi pyar krta hu jitna 1st day krta tha aur mere liye aaj bhi aap bhut important ho  3 sal hojaye 30 saal hojaye ya fir 3 crore saal hojaye me apni jaan se kabhi bore ni hone wala har ek din apke sath naya din lagta hai.......
+
+  Aaj bhi aap mere liye vahi pyari si choti si bacchi ho jisspe meri jaan hmesha haazir rehti hai maanta hu ab ham mil nhi paate frequently par time apna bhi ayega jb hm daily ek dusre ke baaho me pyar kr rhe honge usi din ke hopes me mai jee rha hu......
+  Aur aap na bhut bhut bhut achii ho me apse gussa ni hu nahi naraz hu manta hu apne gusse me boldia hota hai smjhta hu is cheej ko aur aapse kal milne bhi aunga fir ham pyari pyari batein krenge pyare moments spent krennge .....
+
+  Bass itna kehna chahunga ki aap mere liye sb kuch ho apko pane ke liye kuch bhi kr skta hu hmare beech me kisi ko nhi ane dunga aur aaj bhi apke liye utni hi ijjat pyar respect care sab hai....
+Bas ye kuch saal aur nikal jaye fir hame sath me rehne se koi ni rok skega me sbko manalunga aur manage krlunga promise🤞
+
+  
+  HAPPY 3 YEARS ANNIVERSARY HMARI SNEHA AKSHAT KI PYARI SI SUNDAR SI SWEET SI BHOLI SI SEXY SI HOT SI MUMMY G AUR MERI PYARI DHARAM PATNI G
+</div>
+
+  </div>  <audio autoplay loop muted>
+    <source src="romantic.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>  <script>
+    function createHearts() {
+      const heartsContainer = document.querySelector('.hearts');
+      for (let i = 0; i < 30; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+        heartsContainer.appendChild(heart);
+      }
+    }
+    createHearts();
+  </script></body>
+</html>
